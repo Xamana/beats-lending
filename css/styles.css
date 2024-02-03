@@ -339,8 +339,8 @@ body {
     background-color: #F7F7F7;
     border-radius: 30px;
     color: rgba(40, 40, 40, 1);
-    padding: 15px;
-    margin-bottom: 14px;
+    padding: 15px 15px 4px 15px ;
+    margin-bottom: 24px;
 }
 .about-advantages {
     border-bottom: 1px solid #DCDCDC;
@@ -374,7 +374,6 @@ body {
 .about-advantages__text {
 }
 .shipping-controls {
-    margin-bottom: 22px;
     display: flex;
     justify-content: space-between;
 }
@@ -414,12 +413,13 @@ body {
     color: rgba(40, 40, 40, 0.8);
 }
 .shipping {
+    margin-bottom: 50px;
 }
 .shipping-item {
     border: 1px solid rgba(98, 98, 98, 1);
     border-radius: 30px;
     padding: 14px;
-    margin-bottom: 8px;
+    margin-bottom: 6px;
     min-height: 60px;
 
 }
@@ -489,12 +489,25 @@ body {
     rotate: 90deg;
     transition: 0.2s;
 }
-
 .shipping-text {
+    margin-top: 22px;
 }
 .reviews {
+    background-color: #F7F7F7;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 600px;
+    padding-top: 14px;
 }
 .reviews-title {
+    font-family:  Schibsted Grotesk;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 27.6px;
+    color: rgba(40, 40, 40, 1);
+    
 }
 .reviews-carousel {
 }
