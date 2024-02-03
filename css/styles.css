@@ -1,0 +1,532 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: Gilroy;
+    font-size: 14px;
+    font-weight: 100;
+    color: #fff;
+    
+}
+
+.container {
+    min-width: 390px;
+    min-height: 100wh;
+}
+.notification {
+    background: linear-gradient(to right, #69B1C9, #5558AF);
+    padding: 10px 0;
+    text-align: center;
+}
+.notification-text {
+    color: white;
+    font-weight: 600;
+}
+
+.header {
+    min-height: 48px;
+    background-color: #0B0B0B;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    padding: 0 10px;
+}
+.logo {
+    width: 32px;
+    height: 32px;
+    margin: 0 2px;
+}
+.navigation {
+    display: flex;
+    gap: 40px;
+    font-size: 12px;
+    font-weight: 400;
+    color: #FFFFFFB2;
+    opacity: 0.7;
+    margin-bottom: 8px;
+}
+.navigation-link {
+}
+.main {
+}
+.previw {
+    min-height: 483px;
+    padding: 0 10px;;
+    border-radius: 0 0 30px 30px;
+    background-color: #0B0B0B;
+    background-image: url(../assets/img/preview/banner.png);
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 8px;
+    letter-spacing: 1;
+}
+.previw-info {
+}
+.previw-title {
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 30px;
+}
+.previw-description {
+    line-height: 35.2px;
+}
+.previw-price {
+    margin-top: 10px;
+    display: flex;
+    width: 112px;
+    height: 50px;
+    border-radius: 30px;
+    background: linear-gradient(to right, rgba(11, 11, 11, 0.4));
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: Neuzeit Grotesk;
+    font-weight: 500;
+    gap: 10px
+}
+.previw-price__old {
+    text-decoration: line-through;
+    font-size: 18px;
+}
+.previw-price__new {
+    font-size: 40px;
+    line-height: 48px;
+}
+.previw-advantages {
+    align-self: end;
+    display: flex;
+    bottom: 0;
+    gap: 5px;
+}
+.previw-advant {
+    width: 120px;
+    height: 118px;
+    background: linear-gradient(rgb(53, 53, 53), rgba(36, 36, 36, 1));
+    border-radius: 30px;
+    border: 1px solid black;
+    border-image: linear-gradient(rgb(53, 53, 53), rgba(36, 36, 36, 1));
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+.previw-advant_img {
+    width: 40px;
+    height: 40px;
+    margin: 10px ;
+}
+.previw-advant_desc {
+    font-family: Gilroy;
+    font-size: 12px;
+    text-align: center;
+    font-weight: 100;
+    line-height: 15.6px;
+}
+.trustpilot {
+    height: 68px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.trustpilot-text {
+    color: black;
+    font-size: 12px;
+    font-weight: 400;
+    font-family: Gilroy;
+    display: flex;
+    gap: 12px;
+}
+.trustpilot-logo {
+    display: block;
+    background: url(../assets/img/trustpilot/trustpilot.png) no-repeat center;
+    width: 74px;
+    height: 14px;
+}
+.products {
+    margin-bottom: 20px;
+}
+.product {
+}
+.product-slider {
+}
+.product-slider__carousel {
+    min-width: 370px;
+    height: 370px;
+    border-radius: 30px;
+    border: 1px solid rgba(220, 220, 220, 1);
+    position: relative;
+}
+.carousel-prev {
+    position: absolute;
+    width: 20px;
+    height: 60px;
+    background-image: url(../assets/img/icon/arrowLeft.svg);
+    background-repeat: no-repeat;
+    left: 6px;
+    top: 154px;
+}
+
+.carousel-img {
+    width: 100%;
+    height: 100%;
+}
+.carousel-next {
+    position: absolute;
+    width: 18px;
+    height: 60px;
+    background-image: url(../assets/img/icon/arrowRight.svg);
+    background-repeat: no-repeat;
+    right: 6px;
+    top: 154px;
+}
+.product-slider__items {
+    display: flex;
+    gap: 10px;
+    margin-top: 5px;
+}
+.product-slider__item {
+    width: 116px;
+    height: 116px;
+    border-radius: 30px;
+    border: 1px solid rgba(220, 220, 220, 1);
+    overflow: hidden;
+}
+.product-slider__item img {
+    width: 116px;
+    height: 116px;
+}
+.slider__active {
+}
+.product-text {
+    color: rgba(40, 40, 40, 1);
+    font-family:  Schibsted Grotesk;
+    margin-top: 20px;
+}
+.product-title {
+    font-weight: 700;
+    font-size: 29px;
+}
+.product-desc {
+    margin-top: 8px;
+    font-weight: 500;
+    font-size: 14px;
+    color: rgba(40, 40, 40, 0.8);
+    line-height: 18.2px;
+}
+.product-price {
+    font-family:  Schibsted Grotesk;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    gap: 10px;
+}
+.product-price__old {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 18px;
+    color: rgba(40, 40, 40, 0.8);
+}
+.product-price__new {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    color: rgba(40, 40, 40, 1);
+}
+.product-price__descount {
+    font-family: Gilroy !important;
+    color: white;
+    width: 93px;
+    height: 32px;
+    border-radius: 40px;
+    background: linear-gradient(106.5deg, #69B1C9 11.42%, #6081C3 53.89%, #5558AF 95.29%);
+    font-size: 20px;
+    display: flex;
+   justify-content: center;
+    align-items: center;
+
+
+}
+.product-colors {
+}
+.product-colors__title {
+    margin-top: 10px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;    
+    line-height: 15.4px;
+    color: rgba(40, 40, 40, 1);
+}
+
+.all-colors {
+    display: flex;
+    gap: 4px;
+    margin-top: 8px;
+}
+.all-colors__item {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    margin: 3px;
+    
+    
+}
+.active-color {
+    width: 40px;
+    height: 40px;
+    margin: 0;
+    outline: 1px solid rgb(98, 98, 98);
+    border: 3px solid white;
+}
+.payment {
+    padding-top: 12px;
+}
+.payment-button {
+    max-width: 390px;
+    height: 55px;
+    background-color: rgba(40, 40, 40, 1);
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 16px;
+}
+.payment-time {
+    color: #F65D81;
+    height: 24px;
+    width: 370px;
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    margin-bottom: 14px;
+}
+.payment-time__desc {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-left: 10px;
+}
+.payment-time__logo {
+    background: url(../assets/img/icon/stopwatch.svg) no-repeat;
+    width: 24px;
+    height: 24px;
+}
+.payment-time__text {
+    line-height: 15.6px;
+    /* letter-spacing: 1px; */
+    font-size: 12px;
+}
+.payment-timer {
+    margin-right: 15px;
+    font-size: 16px;
+    line-height: 17.6px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+.payment-services {
+    display: flex;
+    gap: 5px;
+}
+.payment-services__item {
+}
+.about {
+    background-color: #F7F7F7;
+    border-radius: 30px;
+    color: rgba(40, 40, 40, 1);
+    padding: 15px;
+    margin-bottom: 14px;
+}
+.about-advantages {
+    border-bottom: 1px solid #DCDCDC;
+    padding-bottom: 8px;
+    margin-bottom: 16px;
+}
+.about-advantages__item {
+    margin-bottom: 6px;
+}
+.about-advantages__item:not(:last-child) {
+    
+}
+.about-advantages__container {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 8px;
+}
+.about-advantages__img {
+}
+.about-advantages__title {
+}
+.description-title {
+    font-weight: 700;
+    font-size: 14px;
+    font-family: Gilroy;
+    text-transform: uppercase;
+    line-height: 15.4px;
+    color: rgba(40, 40, 40, 1);
+}
+.about-advantages__text {
+}
+.shipping-controls {
+    margin-bottom: 22px;
+    display: flex;
+    justify-content: space-between;
+}
+.description-text {
+    font-family: Gilroy;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18.2px;
+    color: rgba(40, 40, 40, 0.8);
+}
+.about-characteristics {
+}
+.about-characteristics__title {
+    margin-bottom: 12px;
+}
+.about-characteristics__item {
+    margin-bottom: 10px;
+}
+.about-characteristics__params {
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    margin-bottom: 8px;
+    /* grid-template-column: ; */
+}
+.about-characteristics__subTitle {
+    font-family: Gilroy;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18.2px;
+    color: rgba(40, 40, 40, 1);
+}
+.about-characteristics__text {
+    font-family: Gilroy;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18.2px;
+    color: rgba(40, 40, 40, 0.8);
+}
+.shipping {
+}
+.shipping-item {
+    border: 1px solid rgba(98, 98, 98, 1);
+    border-radius: 30px;
+    padding: 14px;
+    margin-bottom: 8px;
+    min-height: 60px;
+
+}
+
+.shipping-item.active .shipping-title__button::after {
+    rotate: 0deg;
+}
+/* .shipping-item .shipping-title__button {
+    display: none;
+} */
+
+.shipping-item.active .shipping-text {
+    display:block
+}
+
+.shipping-item .shipping-text {
+    display: none;
+}
+
+.shipping-title {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.shipping-title__img {
+    display: block;
+    width: 28px;
+    height: 28px;
+}
+.icon-box {
+    background: url(../assets/img/shipping/box.svg) no-repeat;
+}
+.icon-card {
+    background: url(../assets/img/shipping/card.svg) no-repeat;
+}
+.icon-board {
+    background: url(../assets/img/shipping/board.svg) no-repeat;
+}
+.shipping-title__text {
+}
+.shipping-title__button {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgba(40, 40, 40, 1);
+    position: relative;
+}
+.shipping-title__button::before {
+    content: "";
+    position: absolute;
+    top: calc(50% - 1px);
+    left: calc(50% - 8px);
+    width: 16px;
+    height: 2px;
+    border-radius: 1px;
+    background-color: #fff;
+}
+.shipping-title__button::after {
+    content: "";
+    position: absolute;
+    top: calc(50% - 1px);
+    left: calc(50% - 8px);
+    width: 16px;
+    height: 2px;
+    border-radius: 1px;
+    background-color: #fff;
+    rotate: 90deg;
+    transition: 0.2s;
+}
+
+.shipping-text {
+}
+.reviews {
+}
+.reviews-title {
+}
+.reviews-carousel {
+}
+.reviews-items {
+}
+.reviews-item {
+}
+.reviews-comments {
+}
+.reviews-person {
+}
+.reviews-person__img {
+}
+.reviews-info {
+}
+.reviews-info__nickName {
+}
+.reviews-info__jobTitle {
+}
+.reviews-carousel__buttons {
+}
+.reviews-carousel__item {
+}
+.active-carousel {
+}
+.footer {
+}
+.content {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.shiping-item__active {
+    overflow: visible;
+    max-height: none;
+}
