@@ -511,17 +511,48 @@ body {
 }
 .reviews-carousel {
 }
-.reviews-items {
+.reviews-list {
+    display: flex;
+   
 }
 .reviews-item {
+    display: flex;
+    width: 290px;
+    height: 170px;
+    border-radius: 30px;
+    border: 1px solid rgba(242, 242, 242, 1);
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 15px;
+
 }
 .reviews-comments {
+    color: rgba(40, 40, 40, 0.8);
+    font-size: 14px;
+    font-weight: 400;
+    font-family: Gilroy
 }
 .reviews-person {
+    display: flex;
+    border-top: 1px solid rgba(220, 220, 220, 1);
 }
 .reviews-person__img {
+    width: 36px;
+    height: 36px;
+    display: flex;
+
+}
+.icon-youtube {
+    background: url(../assets/img/comments/Youtube.svg) no-repeat center;
 }
 .reviews-info {
+    font-family:  Schibsted Grotesk;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 17.2px;
+    color: rgba(40, 40, 40, 1);
+   
 }
 .reviews-info__nickName {
 }
