@@ -140,18 +140,7 @@ body {
     overflow: hidden;
     margin-bottom: 10px;
 }
-.previw-advant::after {
-    position: absolute;
-    content: '';
-    top: -1px;
-    right: -1px;
-    bottom: -1px;
-    left: -1px;
-    border: 1px solid rgba(255, 255, 255, 0.7);
-    border-image: linear-gradient(to top right, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0) 100%);
-    border-radius: 30px;
-    
-}
+
 .previw-advant_img {
     width: 40px;
     height: 40px;
@@ -509,7 +498,7 @@ body {
     padding: 14px;
     margin-bottom: 6px;
     min-height: 60px;
-
+    width: 100%;
 }
 
 .shipping-item.active .shipping-title__button::after {
@@ -696,8 +685,35 @@ body {
 .content {
     margin-left: 10px;
     margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .shiping-item__active {
     overflow: visible;
     max-height: none;
+}
+
+@media (min-width: 530px) {
+    .content {
+        max-width: 1024px;
+    }
+    .header {
+        padding: 0 50px
+    }
+    .previw-container {
+        display: flex;
+        background-position: center;
+        padding: 0 10%;
+        max-width: 1024px;
+        width: 100%;
+    }
+    .previw-info {
+        width: 100%;
+    }
+    .previw-advantages {
+        width: 100%;
+        justify-content: start;
+        gap: 8%
+    }
 }
