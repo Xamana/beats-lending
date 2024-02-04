@@ -25,26 +25,28 @@
         </header>
         <main class="main">
             <div class="previw">
-                <div class="previw-info">
-                    <div class="previw-title">Beats Studio Buds +</div>
-                    <div class="previw-description">Powerful Sound. Perfect Fit</div>
-                    <div class="previw-price">
-                        <div class="previw-price__old">£150</div>
-                        <div class="previw-price__new">£5</div>
+                <div class="previw-container content">
+                    <div class="previw-info">
+                        <div class="previw-title">Beats Studio Buds +</div>
+                        <div class="previw-description">Powerful Sound. Perfect Fit</div>
+                        <div class="previw-price">
+                            <div class="previw-price__old">£150</div>
+                            <div class="previw-price__new">£5</div>
+                        </div>
                     </div>
-                </div>
-                <div class="previw-advantages">
-                    <div class="previw-advant">
-                        <img src="./assets/img/preview/battery.svg" alt="" class="previw-advant_img">
-                        <div class="previw-advant_desc">Up to 1.6x MoreActive Noise Cancelling</div>
-                    </div>
-                    <div class="previw-advant">
-                        <img src="./assets/img/preview/line.svg" alt="" class="previw-advant_img">
-                        <div class="previw-advant_desc">Up to 36 Hours of Listening Time with Charging Case</div>
-                    </div>
-                    <div class="previw-advant">
-                        <img src="./assets/img/preview/micro.svg" alt="" class="previw-advant_img">
-                        <div class="previw-advant_desc">3x Larger Mics for Crisp, Clear Calls</div>
+                    <div class="previw-advantages">
+                        <div class="previw-advant">
+                            <img src="./assets/img/preview/battery.svg" alt="" class="previw-advant_img">
+                            <div class="previw-advant_desc">Up to 1.6x MoreActive Noise Cancelling</div>
+                        </div>
+                        <div class="previw-advant">
+                            <img src="./assets/img/preview/line.svg" alt="" class="previw-advant_img">
+                            <div class="previw-advant_desc">Up to 36 Hours of Listening Time with Charging Case</div>
+                        </div>
+                        <div class="previw-advant">
+                            <img src="./assets/img/preview/micro.svg" alt="" class="previw-advant_img">
+                            <div class="previw-advant_desc">3x Larger Mics for Crisp, Clear Calls</div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -57,14 +59,18 @@
                 <div class="product">
                     <div class="product-slider">
                         <div class="product-slider__carousel">
-                            <div class="carousel-prev"></div>
-                            <img src="./assets/img/products/silver/case.png" alt="" class="carousel-img">
-                            <div class="carousel-next"></div>
+                            <div class="carousel-prev slider-button"><i class="slider-button__perv"></i></div>
+                            <div class="product-slider__img">
+                                <img src="./assets/img/products/silver/case.png" alt="" class="carousel-img">
+                                <img src="./assets/img/products/silver/earphone.png" alt="" class="carousel-img">
+                                <img src="./assets/img/products/silver/person.png" alt="" class="carousel-img">
+                            </div>
+                            <div class="carousel-next slider-button"><i class="slider-button__next"></i></div>
                         </div>
                         <div class="product-slider__items">
-                            <div class="product-slider__item slider__active"><img src="./assets/img/products/silver/case.png" alt=""></div>
-                            <div class="product-slider__item"><img src="./assets/img/products/silver/earphone.png" alt=""></div>
-                            <div class="product-slider__item"><img src="./assets/img/products/silver/person.png" alt=""></div>
+                            <div class="product-slider__item"><img src="./assets/img/products/silver/case.png" alt="" class="product-slider__preview"></div>
+                            <div class="product-slider__item"><img src="./assets/img/products/silver/earphone.png" alt="" class="product-slider__preview"></div>
+                            <div class="product-slider__item"><img src="./assets/img/products/silver/person.png" alt=""class="product-slider__preview"></div>
                         </div>
                     </div>
                     <div class="product-text">
@@ -79,10 +85,10 @@
                     <div class="product-colors">
                         <div class="product-colors__title">сolor:</div>
                         <div class="all-colors">
-                            <div class="all-colors__item active-color" style="background-color: rgba(173, 172, 177, 1);"></div>
-                            <div class="all-colors__item" style="background-color: rgba(40, 40, 40, 1);"></div>
-                            <div class="all-colors__item" style="background-color: rgba(236, 170, 167, 1);"></div>
-                            <div class="all-colors__item" style="background-color: rgba(236, 229, 221, 1);"></div>
+                            <div class="all-colors__item" color="silver" style="background-color: rgba(173, 172, 177, 1);"></div>
+                            <div class="all-colors__item" color="black" style="background-color: rgba(40, 40, 40, 1);"></div>
+                            <div class="all-colors__item" color="pink" style="background-color: rgba(236, 170, 167, 1);"></div>
+                            <div class="all-colors__item" color="white" style="background-color: rgba(236, 229, 221, 1);"></div>
                         </div> 
                     </div>
                 </div>    
@@ -155,7 +161,7 @@
                 </div> 
             </div>
             <div class="shipping content">
-                <div class="shipping-item active">
+                <div class="shipping-item">
                     <div class="shipping-controls">
                         <div class="shipping-title">
                             <i class="shipping-title__img icon-box"></i>
@@ -167,7 +173,7 @@
                         All purchases are shipped from our warehouse in “Country” and are fully insured with a tracking number. Tracked delivery between 2 - 4 days in “Country” + Free Delivery
                     </div>
                 </div>
-                <div class="shipping-item active">
+                <div class="shipping-item">
                     <div class="shipping-controls">
                         <div class="shipping-title">
                             <i class="shipping-title__img icon-card"></i>
@@ -197,6 +203,16 @@
                 <div class="reviews-carousel">
                     <div class="reviews-list">
                         <div class="reviews-item">
+                            <div class="reviews-comments">“These deliver superior audio experience across all frequency ranges.”</div>
+                            <div class="reviews-person">
+                                <i alt="" class="reviews-person__img icon-youtube"></i>
+                                <div class="reviews-info">
+                                    <div class="reviews-info__nickName">@DailyTekk</div>
+                                    <div class="reviews-info__jobTitle">Tech Reviewer</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="reviews-item">
                             <div class="reviews-comments">“The noise cancellation on these earbuds is easily top tier.”</div>
                             <div class="reviews-person">
                                 <i alt="" class="reviews-person__img icon-youtube"></i>
@@ -206,16 +222,26 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="reviews-item">
+                            <div class="reviews-comments">“How do they sound on phone calls? These headphones sound great.”</div>
+                            <div class="reviews-person">
+                                <i alt="" class="reviews-person__img icon-youtube"></i>
+                                <div class="reviews-info">
+                                    <div class="reviews-info__nickName">@PayetteForward</div>
+                                    <div class="reviews-info__jobTitle">Tech Reviewer</div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="reviews-carousel__buttons">
                         <div class="reviews-carousel__item"></div>
-                        <div class="reviews-carousel__item active-carousel"></div>
+                        <div class="reviews-carousel__item active"></div>
                         <div class="reviews-carousel__item"></div>
                     </div>
                 </div>
             </div>
         </main>
-        <footer class="footer content"></footer>
+        <footer class="footer content">@Xamana21</footer>
     </div>
 </body>
 <script type="text/javascript" src="./js/index.js"></script>
